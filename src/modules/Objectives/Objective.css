@@ -1,0 +1,190 @@
+.objective {
+  height: 100vh;
+  background-color: #0b4d46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10%;
+}
+
+.objective .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+.objective .content-container .motive-speech-box {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 95vw;
+  height: 15vh;
+  padding: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.objective .content-container .motive-speech-box .motive-speech {
+  font-size: 18px;
+  font-family: cursive;
+  text-align: justify;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: aliceblue;
+  -webkit-box-shadow: 0 4px 105px 14px rgba(111, 140, 236, 0.2), 4px 16px 20px 0 rgba(111, 140, 236, 0.2);
+          box-shadow: 0 4px 105px 14px rgba(111, 140, 236, 0.2), 4px 16px 20px 0 rgba(111, 140, 236, 0.2);
+}
+
+.objective .content-container .motive-speech-box :hover {
+  -webkit-box-shadow: 0 4px 15px 4px rgba(245, 143, 206, 0.2), 4px 6px 20px 0 rgba(249, 45, 188, 0.2);
+          box-shadow: 0 4px 15px 4px rgba(245, 143, 206, 0.2), 4px 6px 20px 0 rgba(249, 45, 188, 0.2);
+}
+
+.objective .content-container .key-content {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 95vw;
+  height: 65vh;
+  padding: 10px;
+}
+
+.objective .content-container .key-content .keys {
+  border: 1px solid rgba(111, 140, 236, 0.2);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-shadow: 0 4px 15px 4px rgba(245, 143, 206, 0.2), 4px 6px 20px 0 rgba(249, 45, 188, 0.2);
+          box-shadow: 0 4px 15px 4px rgba(245, 143, 206, 0.2), 4px 6px 20px 0 rgba(249, 45, 188, 0.2);
+}
+
+.objective .content-container .key-content .keys .title-text {
+  font-size: 20px;
+  color: beige;
+  text-align: center;
+  font-family: cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: underline;
+}
+
+.objective .content-container .key-content .keys .list {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: -20px;
+}
+
+.objective .content-container .key-content .keys .list ul {
+  font-size: 18px;
+  color: beige;
+  font-family: cursive;
+  list-style-type: circle;
+}
+
+.objective .content-container .key-content .photo {
+  border-radius: 5px;
+  background-color: #446d6d;
+}
+
+@media screen and (max-width: 680px) {
+  .objective {
+    height: 100vh;
+    gap: 2%;
+    overflow-y: scroll;
+  }
+  .objective .content-container .motive-speech-box {
+    height: 20vh;
+  }
+  .objective .content-container .motive-speech-box .motive-speech {
+    font-size: 16px;
+  }
+  .objective .content-container .key-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .objective .content-container .key-content .keys {
+    border: 1px solid rgba(111, 140, 236, 0.2);
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-shadow: 0 4px 15px 4px rgba(245, 143, 206, 0.2), 4px 6px 20px 0 rgba(249, 45, 188, 0.2);
+            box-shadow: 0 4px 15px 4px rgba(245, 143, 206, 0.2), 4px 6px 20px 0 rgba(249, 45, 188, 0.2);
+  }
+  .objective .content-container .key-content .keys .title-text {
+    font-size: 18px;
+  }
+  .objective .content-container .key-content .keys .list {
+    margin-top: 5px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: -20px;
+  }
+  .objective .content-container .key-content .keys .list ul {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=Objective.css.map */

@@ -1,22 +1,21 @@
-import React from 'react';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import {
-  AppBar,
-  MenuItem,
-  Menu,
-  Tooltip,
-  Button,
-  Avatar,
-  Container,
-  Typography,
-  IconButton,
-  Toolbar,
-  Box,
-} from "@mui/material";
+import Container from '@mui/material/Container';
+import Avatar from '@mui/material/Avatar';
+import Button from '@mui/material/Button';
+import Tooltip from '@mui/material/Tooltip';
+import MenuItem from '@mui/material/MenuItem';
+import './TopAppBar.css'
 
-const pages = ['Objective', 'Journey', 'Extra', 'Contacts', 'Blogging'];
+const pages = [{title: "Objective", id: "objective"}, {title: "Journey", id: "journey"}, {title: "Extra", id: "extra"}, {title: "Contacts", id: "contacts"}];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-export default function TopAppBar() {
+
+const TopAppBar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -25,27 +24,40 @@ export default function TopAppBar() {
   };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
+    console.log(event.currentTarget)
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+    props.setOpen(false);
   };
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
 
-    return (
-        <AppBar position="static">
+  return (
+
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
             variant="h6"
             noWrap
-            component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+            component="a"
+            href="/"
+            sx={{
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+            style={{fontSize: "36px", fontFamily: "cursive"}}
+            className="Appbar-title"
           >
-            JAHID
+            Jahid Hasan
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -54,52 +66,42 @@ export default function TopAppBar() {
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
-              onClick={handleOpenNavMenu}
+              onClick={props.handleDrawerOpen}
               color="inherit"
             >
               <MenuIcon />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
           </Box>
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+            component="a"
+            href=""
+            sx={{
+              mr: 2,
+              display: { xs: 'flex', md: 'none' },
+              flexGrow: 1,
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+            style={{fontSize: "28px", fontFamily: "cursive"}}
+            className="Appbar-title"
           >
-            JAHID
+            Jahid Hasan
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} className="pages-container">
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
+                href={`/#${page.id}`}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+                className="pages"
               >
-                {page}
+                {page.title}
               </Button>
             ))}
           </Box>
@@ -107,7 +109,7 @@ export default function TopAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.png" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -127,7 +129,7 @@ export default function TopAppBar() {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseNavMenu}>
+                <MenuItem key={setting} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
@@ -135,6 +137,6 @@ export default function TopAppBar() {
           </Box>
         </Toolbar>
       </Container>
-    </AppBar>
-    )
-}
+  );
+};
+export default TopAppBar;

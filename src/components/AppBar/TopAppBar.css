@@ -1,0 +1,29 @@
+.Appbar-title {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.Appbar-title:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-shadow: 0 4px 15px 4px rgba(141, 10, 93, 0.2), 4px 6px 20px 0 rgba(158, 12, 124, 0.19);
+          box-shadow: 0 4px 15px 4px rgba(141, 10, 93, 0.2), 4px 6px 20px 0 rgba(158, 12, 124, 0.19);
+}
+
+.pages-container {
+  gap: 25px;
+}
+
+.pages {
+  border: 1px dotted black;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.pages:hover {
+  padding-left: 40px;
+  padding-right: 40px;
+  -webkit-box-shadow: 0 4px 15px 4px rgba(141, 10, 93, 0.2), 4px 6px 20px 0 rgba(158, 12, 124, 0.19);
+          box-shadow: 0 4px 15px 4px rgba(141, 10, 93, 0.2), 4px 6px 20px 0 rgba(158, 12, 124, 0.19);
+}
+/*# sourceMappingURL=TopAppBar.css.map */
