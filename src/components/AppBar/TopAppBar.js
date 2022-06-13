@@ -38,7 +38,7 @@ const TopAppBar = (props) => {
 
   return (
 
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" style={{backgroundImage:"linear-gradient(to right, #93E7FB , #E0FFFF)"}}>
         <Toolbar disableGutters>
           <Typography
             variant="h6"
