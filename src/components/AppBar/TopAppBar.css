@@ -1,13 +1,21 @@
 .Appbar-title {
+  -webkit-box-shadow: 0 4px 15px 4px rgba(213, 3, 136, 0.2), 4px 6px 20px 0 rgba(231, 1, 173, 0.19);
+          box-shadow: 0 4px 15px 4px rgba(213, 3, 136, 0.2), 4px 6px 20px 0 rgba(231, 1, 173, 0.19);
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .Appbar-title:hover {
-  padding-left: 20px;
-  padding-right: 20px;
-  -webkit-box-shadow: 0 4px 15px 4px rgba(141, 10, 93, 0.2), 4px 6px 20px 0 rgba(158, 12, 124, 0.19);
-          box-shadow: 0 4px 15px 4px rgba(141, 10, 93, 0.2), 4px 6px 20px 0 rgba(158, 12, 124, 0.19);
+  color: #5d815d;
+  border-radius: 5px;
+  margin-right: 180px;
+  padding-left: 40px;
+  padding-right: 40px;
+  -webkit-box-shadow: 0 4px 15px 4px rgba(141, 10, 93, 0.2), 4px 6px 20px 0 rgba(224, 17, 141, 0.19);
+          box-shadow: 0 4px 15px 4px rgba(141, 10, 93, 0.2), 4px 6px 20px 0 rgba(224, 17, 141, 0.19);
 }
 
 .pages-container {
@@ -15,12 +23,16 @@
 }
 
 .pages {
-  border: 1px dotted black;
+  border: 1px dotted #f6f6f6;
+  -webkit-box-shadow: 0 4px 15px 4px rgba(255, 15, 167, 0.2), 4px 6px 20px 0 rgba(158, 12, 124, 0.19);
+          box-shadow: 0 4px 15px 4px rgba(255, 15, 167, 0.2), 4px 6px 20px 0 rgba(158, 12, 124, 0.19);
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .pages:hover {
+  background-color: #93E7FB;
+  color: black;
   padding-left: 40px;
   padding-right: 40px;
   -webkit-box-shadow: 0 4px 15px 4px rgba(141, 10, 93, 0.2), 4px 6px 20px 0 rgba(158, 12, 124, 0.19);
