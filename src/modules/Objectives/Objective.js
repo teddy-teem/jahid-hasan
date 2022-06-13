@@ -33,7 +33,7 @@ export default function Objective() {
             </Grid>
           </Grid>
           <Grid item  xs={12} lg={4} md={4} xl={4}  className="objective key-content photo">
-            Photo
+          <img src={require('../../static/images/showOff/ncpc2019.jpg').default} alt="Jahid" />
           </Grid>
         </Grid>
       </Grid>
