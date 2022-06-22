@@ -1,5 +1,4 @@
 .introduction {
-  background-color: #1d031d;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,6 +10,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #351a1a;
 }
 
 .introduction .content {

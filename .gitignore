@@ -24,6 +24,5 @@ yarn-debug.log*
 yarn-error.log*
 
 *css.map
-*.scss
 *node_modules
 node_modules

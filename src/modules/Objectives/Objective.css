@@ -1,6 +1,5 @@
 .objective {
   height: 110vh;
-  background-color: #0b4d46;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,6 +10,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #0c0c2f;
   gap: 5%;
 }
 

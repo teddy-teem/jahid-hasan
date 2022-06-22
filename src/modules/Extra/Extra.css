@@ -1,0 +1,41 @@
+.extra {
+  background-color: #fcd1d4;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.extra .content {
+  margin-top: 100px;
+}
+
+.extra .details {
+  width: 80vw;
+  height: 78vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow-y: scroll;
+}
+
+.education {
+  padding: 10px;
+  border: 1px solid wheat;
+  margin: 15px;
+  border-radius: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.education:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+/*# sourceMappingURL=Extra.css.map */
