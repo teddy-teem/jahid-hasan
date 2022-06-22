@@ -24,6 +24,8 @@ import Introduction from "../../modules/Introduction/Introduction";
 import TopAppBar from "../AppBar/TopAppBar";
 import Objectives from "../../modules/Objectives/Objective";
 import "./MainApp.css";
+import Journey from "../../modules/Journey/Journey";
+import Extra from "../../modules/Extra/Extra";
 
 const drawerWidth = 240;
 
@@ -87,7 +89,7 @@ export default function PersistentDrawerLeft() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" ope={open} className="app-bar">
+      <AppBar position="fixed" open={open} className="app-bar">
         <TopAppBar
           open={open}
           setOpen={setOpen}
@@ -157,11 +159,11 @@ export default function PersistentDrawerLeft() {
         </div>
       </Drawer>
       <Main open={open}>
-        {/* <Grid container style={{backgroundColor: "red", width: "100%", marginLeft: "-100px",marginRight: "100px"}}> */}
         <DrawerHeader />
         <Introduction />
         <Objectives />
-        {/* </Grid> */}
+        <Journey/>
+        <Extra/>
       </Main>
     </Box>
   );

@@ -1,0 +1,28 @@
+.journey{
+    background-color: rgb(103, 230, 162);
+    height: 100vh;
+    box-sizing: border-box;
+    .content {
+        margin-top: 100px;
+    }
+    .details {
+        width: 80vw;
+        height: 78vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-y: scroll;
+    }
+}
+
+.education {
+    padding: 10px;
+    border: 1px solid wheat;
+    margin: 15px;
+    border-radius: 10px;
+    transition: all 1s;
+    &:hover {
+        cursor: pointer;
+        background-color: aquamarine;
+    }
+}

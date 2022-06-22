@@ -1,0 +1,15 @@
+.MainApp {
+    .app-bar {
+        box-sizing: border-box;
+        background-color: rgb(35, 107, 83);
+    }
+    .sidebar {
+        background-color: rgb(35, 107, 83);
+    }
+    .sidebar-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+}
