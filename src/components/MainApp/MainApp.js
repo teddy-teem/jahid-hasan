@@ -89,16 +89,8 @@ export default function PersistentDrawerLeft() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open} className="app-bar">
-        <TopAppBar
-          open={open}
-          setOpen={setOpen}
-          handleDrawerClose={handleDrawerClose}
-          handleDrawerOpen={handleDrawerOpen}
-        />
-      </AppBar>
+      <TopAppBar setOpen={setOpen} />
       <Drawer
-
         PaperProps={{
           style: {
             backgroundColor: "rgb(35, 107, 83)",
