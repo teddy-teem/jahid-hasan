@@ -1,5 +1,5 @@
 .journey {
-  background-color: #67e6a2;
+  background-color: #609f7e;
   height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -28,14 +28,42 @@
 .education {
   padding: 10px;
   border: 1px solid wheat;
+  line-height: 1;
+  text-align: justify;
   margin: 15px;
   border-radius: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-color: #799b90;
+  line-gap: 0.1;
+}
+
+.education span {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.education b {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .education:hover {
   cursor: pointer;
-  background-color: aquamarine;
+  background-color: #0f1815 !important;
+}
+
+.education:hover span {
+  color: #ffe2bf;
+}
+
+.education:hover b {
+  color: white;
+}
+
+.profession {
+  overflow-y: scroll;
+  height: 60vh;
+  margin: 10px !important;
 }
 /*# sourceMappingURL=Journey.css.map */

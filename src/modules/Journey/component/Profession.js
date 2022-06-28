@@ -1,27 +1,24 @@
 import React from 'react'
+import CardForProfession from '../../../components/Elements/CardViewForProfession/CardForProfession'
 
 export default function Profession() {
-  return (
-    <div className="education">
-      <p>Organization / Company: Spring Rain Prvt. Ltd</p>
-      <p>Position: Full Stack Web Developer</p>
-      <p>Location: Dhaka, Bangladesh </p>
-      <p>
-        {" "}
-        Time Period: 1<sup>st</sup> January 2022 - Currently{" "}
-      </p>
-      <p>
-        Something About: I am currently working here as a full stack web
-        developer. I work here with a talented team, from where I am learning a
-        lot of things about team collaboration. The task is assigned by Jira
-        Tickets, where all the description is mentioned. I work in both side
-        front-end and back-end when the ticket assign. Also I had to finish
-        assigned task in a proper time there I have learned about estimation of
-        time. I am still learning about Scalability, Feasibility, and Efficient
-        code writing for the feature or project I work with.
-      </p>
 
-      <p> Passing Time: 01/01/1999</p>
+  return (
+    <div className='profession'>
+      <CardForProfession
+      organization={'Organization Prvt Ltd'}
+      position={"Full Stack Web Development"}
+      period={"1st January, 2022 - Currently"}
+      paragraph={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"}
+      organizationUrl={"google.com"}
+      />
+       <CardForProfession
+      organization={'Organization Prvt Ltd'}
+      position={"Intern"}
+      period={"1st Septembar, 2021 - 31st Decembar"}
+      paragraph={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"}
+      organizationUrl={"google.com"}
+      />
     </div>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 .journey{
-    background-color: rgb(103, 230, 162);
+    background-color: rgb(96, 159, 126);
     height: 100vh;
     box-sizing: border-box;
     .content {
@@ -18,11 +18,34 @@
 .education {
     padding: 10px;
     border: 1px solid wheat;
+    line-height: 1;
+    text-align: justify;
     margin: 15px;
     border-radius: 10px;
     transition: all 1s;
+    background-color: rgb(121, 155, 144);
+    line-gap: 0.1;
+    span {
+        transition: all 1s;
+    }
+    b {
+        transition: all 1s;
+    }
     &:hover {
         cursor: pointer;
-        background-color: aquamarine;
+        background-color: rgb(15, 24, 21) !important;
+        span {
+                color: rgb(255, 226, 191);
+        }
+        b {
+            color: white
+        }
     }
+    
+}
+.profession {
+    overflow-y: scroll;
+    height: 60vh;
+    margin: 10px !important;
+
 }
