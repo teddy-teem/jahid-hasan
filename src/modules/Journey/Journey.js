@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import React from "react";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
@@ -38,6 +38,8 @@ export default function Journey() {
             >
               <TabList
                 onChange={handleChange}
+                variant="scrollable"
+                scrollButtons="auto"
                 aria-label="lab API tabs example"
               >
                 <Tab label="Profesition" value="1" />
