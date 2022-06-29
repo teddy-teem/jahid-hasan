@@ -1,0 +1,17 @@
+.read-or-hide {
+  color: silver;
+  cursor: pointer;
+}
+
+.cardHover:hover {
+  margin: 0;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(#FFB6C1), to(#82E0AA));
+  background: linear-gradient(to right, #FFB6C1, #82E0AA);
+  color: #C71585;
+}
+
+.cardHover:hover h5 {
+  font-weight: bolder;
+}
+/*# sourceMappingURL=CardForTraining.css.map */

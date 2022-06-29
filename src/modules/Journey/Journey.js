@@ -9,6 +9,7 @@ import Education from "./component/Education";
 import "./Journey.css";
 import Profession from "./component/Profession";
 import Training from "./component/Training";
+import Projects from "./component/Projects";
 
 export default function Journey() {
   const [value, setValue] = React.useState("1");
@@ -58,6 +59,9 @@ export default function Journey() {
             </TabPanel>
             <TabPanel value="3">
               <Training />
+            </TabPanel>
+            <TabPanel value="4">
+              <Projects />
             </TabPanel>
           </TabContext>
         </Box>

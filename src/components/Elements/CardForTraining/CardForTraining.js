@@ -6,9 +6,9 @@ import {
   CardActions,
   Button,
 } from "@mui/material";
-import "./CardForProfession.css";
+import "./CardForTraining.css";
 
-export default function CardForProfession(props) {
+export default function CardForTraining(props) {
   const text = props.paragraph;
   const [isReadMore, setIsReadMore] = useState(true);
   const toggleReadMore = () => {
@@ -33,9 +33,9 @@ export default function CardForProfession(props) {
           {props.organization}
         </Typography>
         <Typography variant="h5" component="div">
-          {props.position}
+          {props.trainingTitle}
         </Typography>
-        <Typography sx={{ mb: 1.5 }}>{props.period}</Typography>
+        <Typography sx={{ mb: 1.5 }}>{props.jobType}</Typography>
         <Typography variant="body2">
           {isReadMore ? text.slice(0, 150) : text}
           <span onClick={toggleReadMore} className="read-or-hide">
@@ -47,7 +47,8 @@ export default function CardForProfession(props) {
       <CardActions
         sx={{ display: "flex", flexDirection: "row", justifyContent: "center" }}
       >
-        <Button size="small">Visit Company</Button>
+        <Button size="small">Visit Certificate</Button>
+        <Button size="small">Visit Website</Button>
       </CardActions>
     </Card>
   );
