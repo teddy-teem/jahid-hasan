@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
 import {Grid, Typography} from "@mui/material";
 import "./Introduction.css"
+import myTheme from "../../theme.json"
 
 export default function Introduction() {
     const [iam , setIam] = useState("Fullstack Web Developer")
   return (
-    <Grid container className={"introduction"} id="introduction">
+    <Grid container sx={{backgroundColor: myTheme.LightColors.PageBackground}} className={"introduction"} id="introduction">
         <Grid item className='introduction content'>
-            <Grid item  className={"introduction content details"}>
+            <Grid item sx={{backgroundColor: myTheme.LightColors.contentHolder}}  className={"introduction content details"}>
                 <Typography variant="h1" component="h2" className=' name'>Jahid Hasan</Typography>
                 <Grid container spacing={2} className="iam-cotnainer">
                     <Typography variant="h1" component="h2" className=' iam'> &nbsp; &nbsp;Node JS</Typography>
@@ -22,7 +23,7 @@ export default function Introduction() {
                 </Grid>
 
             </Grid>
-            <Grid item  className={"introduction content photo"}>
+            <Grid item sx={{backgroundColor: myTheme.LightColors.contentHolder}}  className={"introduction content photo"}>
                 <img src={require('./download.png').default} alt="Jahid" />
             </Grid>
         </Grid>

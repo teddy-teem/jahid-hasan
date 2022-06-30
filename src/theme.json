@@ -1,0 +1,9 @@
+{
+    "LightColors" : {
+        "AppBar": "#be1558",
+        "PageBackground": "#fbcbc9",
+        "contentHolder": "#e75874",
+        "CardForJourney": "#322514",
+        "CardText": "#ffffff"
+    }
+}

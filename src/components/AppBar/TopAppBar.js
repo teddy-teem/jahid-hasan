@@ -14,8 +14,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { createTheme, styled, alpha } from "@mui/material/styles";
-import { pink } from "@mui/material/colors";
-
+import myTheme from "../../theme.json"
 const pages = [
   { content: "Objective", id: "objective" },
   { content: "Journey", id: "journey" },
@@ -25,19 +24,19 @@ const pages = [
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 const GreenSwitch = styled(Switch)(({ theme }) => ({
   "& .MuiSwitch-switchBase.Mui-checked": {
-    color: pink[600],
+    color: myTheme.LightColors.AppBar,
     "&:hover": {
-      backgroundColor: alpha(pink[600], theme.palette.action.hoverOpacity),
+      backgroundColor: alpha(myTheme.LightColors.AppBar, theme.palette.action.hoverOpacity),
     },
   },
   "& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track": {
-    backgroundColor: pink[600],
+    backgroundColor: myTheme.LightColors.AppBar,
   },
 }));
 const themeLight = createTheme({
   palette: {
     primary: {
-      main: pink[600],
+      main: myTheme.LightColors.AppBar,
     },
   },
 });
@@ -68,7 +67,6 @@ const TopBar = (props) => {
 
   return (
     <AppBar position="fixed" theme={dark ? themeDark : themeLight}>
-      {console.log("====", themeLight)}
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}>
