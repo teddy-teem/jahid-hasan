@@ -1,14 +1,18 @@
-import React from 'react'
+import React from "react";
+import CardForProjects from "../../../components/Elements/CardForProjects/CardForProjects";
 
 export default function Projects() {
   return (
-    <div className="education">
-      <p>Institute Name: Bangladesh Army University of Engineering & Technology</p>
-      <p>Certification Name:  SSC</p>
-      <p> Descipline / Major: </p>
-      <p>Result in CGPA: </p>
-
-      <p> Passing Time: 01/01/1999</p>
+    <div className="profession">
+      <CardForProjects
+        time={"July, 2021 - Runing"}
+        ProjectTitle={"Old Portfolio"}
+        methodology={"Waterfall"}
+        paragraph={
+          " I have learned Full stack Web Development from this course, I have learned HTML5, CSS3, SCSS, JavaScript, jquery, NodeJs, KoaJs, MongoDb, and so many Technology from this course. they have taken an exam after completing the course, and i have successfully passed the exam."
+        }
+        usedTechnology={"HTML5, CSS3, Javascript, Jquery, Scss"}
+      />
     </div>
-  )
+  );
 }

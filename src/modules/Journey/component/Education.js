@@ -1,14 +1,27 @@
 import React from "react";
+import CardForEducation from "../../../components/Elements/CardViewForEducation/CardForEducation";
 
 export default function () {
   return (
-    <div className="education">
-      <p>Institute Name: Bangladesh Army University of Engineering & Technology</p>
-      <p>Certification Name:  SSC</p>
-      <p> Descipline / Major: </p>
-      <p>Result in CGPA: </p>
-
-      <p> Passing Time: 01/01/1999</p>
+    <div className="profession">
+      <CardForEducation
+        institutoin={"Bangladesh Army University of Engineering & Technology"}
+        certification={"Bachelor of Scinence in Engineering"}
+        discipline={"Computer Science & Engineering"}
+        result={"3.83 out of 4.00"}
+        time={"March, 2017 - July, 2021"}
+        institutoinWebsiteUrl={"google.com"}
+        certificateUrl={"google.com"}
+      />
+      <CardForEducation
+        institutoin={"Bangladesh Army University of Engineering & Technology"}
+        certification={"Bachelor of Scinence in Engineering"}
+        discipline={"Computer Science & Engineering"}
+        result={"3.83 out of 4.00"}
+        time={"March, 2017 - July, 2021"}
+        institutoinWebsiteUrl={"google.com"}
+        certificateUrl={"google.com"}
+      />
     </div>
   );
 }

@@ -9,13 +9,10 @@ import Education from "./component/Education";
 import "./Journey.css";
 import Profession from "./component/Profession";
 import Training from "./component/Training";
-<<<<<<< Updated upstream
-=======
 import Projects from "./component/Projects";
 import Skills from "./component/Skills";
 import ParticipationAwards from "./component/ParticipationAwards";
 import myTheme from "../../theme.json"
->>>>>>> Stashed changes
 
 export default function Journey() {
   const [value, setValue] = React.useState("1");
@@ -66,8 +63,6 @@ export default function Journey() {
             <TabPanel value="3">
               <Training />
             </TabPanel>
-<<<<<<< Updated upstream
-=======
             <TabPanel value="4">
               <Projects />
             </TabPanel>
@@ -77,7 +72,6 @@ export default function Journey() {
             <TabPanel value="6">
               <ParticipationAwards />
             </TabPanel>
->>>>>>> Stashed changes
           </TabContext>
         </Box>
       </Grid>

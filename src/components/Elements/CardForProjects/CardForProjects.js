@@ -6,9 +6,9 @@ import {
   CardActions,
   Button,
 } from "@mui/material";
-import "./CardForProfession.css";
+import "./CardForProjects.css";
 
-export default function CardForProfession(props) {
+export default function CardForProjects(props) {
   const text = props.paragraph;
   const [isReadMore, setIsReadMore] = useState(true);
   const toggleReadMore = () => {
@@ -30,12 +30,14 @@ export default function CardForProfession(props) {
     >
       <CardContent>
         <Typography sx={{ fontSize: 14 }} gutterBottom>
-          {props.organization}
+          {props.time}
         </Typography>
         <Typography variant="h5" component="div">
-          {props.position}
+          {props.ProjectTitle}
         </Typography>
-        <Typography sx={{ mb: 1.5 }}>{props.period}</Typography>
+        <Typography sx={{ mb: 2.5 }}>
+          Used Methodology <b>{props.methodology}</b>
+        </Typography>
         <Typography variant="body2">
           {isReadMore ? text.slice(0, 150) : text}
           <span onClick={toggleReadMore} className="read-or-hide">
@@ -43,12 +45,17 @@ export default function CardForProfession(props) {
           </span>
           <br />
         </Typography>
+        <Typography variant="body2">
+          Used Technology <b>{props.usedTechnology}</b>
+          <br />
+        </Typography>
       </CardContent>
-      <CardActions
+      {/* <CardActions
         sx={{ display: "flex", flexDirection: "row", justifyContent: "center" }}
       >
-        <Button size="small">Visit Company</Button>
-      </CardActions>
+        <Button size="small">Visit Certificate</Button>
+        <Button size="small">Visit Website</Button>
+      </CardActions> */}
     </Card>
   );
 }
