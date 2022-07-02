@@ -1,5 +1,5 @@
 import React from "react";
-import CardForProfession from "../../../components/Elements/CardViewForProfession/CardForProfession";
+import CardForProfession from "../../../components/Elements/Cards/CardsForJourneyPage/CardViewForProfession/CardForProfession";
 
 export default function Profession() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import CardForParticipationAwards from "../../../components/Elements/CardForParticipationAwards/CardForParticipationAwards";
+import CardForParticipationAwards from "../../../components/Elements/Cards/CardsForJourneyPage/CardForParticipationAwards/CardForParticipationAwards";
 
 export default function ParticipationAwards() {
   return (

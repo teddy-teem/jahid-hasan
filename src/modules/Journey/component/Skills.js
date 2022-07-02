@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import CardForSkills from '../../../components/Elements/CardForSkills/CardForSkills'
+import CardForSkills from '../../../components/Elements/Cards/CardsForJourneyPage/CardForSkills/CardForSkills'
 
 export default function Skills() {
   return (

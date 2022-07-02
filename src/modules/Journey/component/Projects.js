@@ -1,5 +1,5 @@
 import React from "react";
-import CardForProjects from "../../../components/Elements/CardForProjects/CardForProjects";
+import CardForProjects from "../../../components/Elements/Cards/CardsForJourneyPage/CardForProjects/CardForProjects";
 
 export default function Projects() {
   return (

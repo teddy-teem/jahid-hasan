@@ -7,7 +7,7 @@ import {
   Button,
 } from "@mui/material";
 import "./CardForParticipationAwards.css";
-import myTheme from "../../../theme.json"
+import myTheme from "../../../../../theme.json"
 
 export default function CardForParticipationAwards (props) {
   return (

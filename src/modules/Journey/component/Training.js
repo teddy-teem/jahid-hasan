@@ -1,5 +1,5 @@
 import React from "react";
-import CardForTraining from "../../../components/Elements/CardForTraining/CardForTraining";
+import CardForTraining from "../../../components/Elements/Cards/CardsForJourneyPage/CardForTraining/CardForTraining";
 
 export default function Training() {
   return (
