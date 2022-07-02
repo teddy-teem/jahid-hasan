@@ -6,7 +6,9 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import "./Extra.css";
-
+import myTheme from "../../theme.json";
+import Activity from "./components/Activity";
+import OnlinePlatforms from "./components/OnlinePlatforms";
 
 export default function Extra() {
   const [value, setValue] = React.useState("1");
@@ -23,7 +25,15 @@ export default function Extra() {
         alignItems={"center"}
         className="content"
       >
-        <Box sx={{ width: "75%", height: "100%", marginTop: "20px" }}>
+        <Box
+          sx={{
+            width: "75%",
+            height: "100%",
+            marginTop: "20px",
+            backgroundColor: myTheme.LightColors.contentHolder,
+            borderRadius: "5px",
+          }}
+        >
           <TabContext value={value}>
             <Box
               sx={{
@@ -45,17 +55,13 @@ export default function Extra() {
               </TabList>
             </Box>
             <TabPanel value="1">
-              Activity
+              <Activity />
             </TabPanel>
             <TabPanel value="2">
-              Online Platform
+              <OnlinePlatforms />
             </TabPanel>
-            <TabPanel value="3">
-              Communicating Languages
-            </TabPanel>
-            <TabPanel value="4">
-              Who Know's me ?
-            </TabPanel>
+            <TabPanel value="3">Communicating Languages</TabPanel>
+            <TabPanel value="4">Who Know's me ?</TabPanel>
           </TabContext>
         </Box>
       </Grid>

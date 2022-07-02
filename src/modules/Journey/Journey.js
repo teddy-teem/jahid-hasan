@@ -12,7 +12,7 @@ import Training from "./component/Training";
 import Projects from "./component/Projects";
 import Skills from "./component/Skills";
 import ParticipationAwards from "./component/ParticipationAwards";
-import myTheme from "../../theme.json"
+import myTheme from "../../theme.json";
 
 export default function Journey() {
   const [value, setValue] = React.useState("1");
@@ -21,7 +21,12 @@ export default function Journey() {
     setValue(newValue);
   };
   return (
-    <Grid container sx={{backgroundColor: myTheme.LightColors.PageBackground}}  id="journey" className="journey">
+    <Grid
+      container
+      sx={{ backgroundColor: myTheme.LightColors.PageBackground }}
+      id="journey"
+      className="journey"
+    >
       <Grid
         container
         direction={"column"}
@@ -29,7 +34,15 @@ export default function Journey() {
         alignItems={"center"}
         className="content"
       >
-        <Box sx={{backgroundColor: myTheme.LightColors.contentHolder, width: "75%", height: "100%", marginTop: "20px" }}>
+        <Box
+          sx={{
+            backgroundColor: myTheme.LightColors.contentHolder,
+            borderRadius: "5px",
+            width: "75%",
+            height: "100%",
+            marginTop: "20px",
+          }}
+        >
           <TabContext value={value}>
             <Box
               sx={{
