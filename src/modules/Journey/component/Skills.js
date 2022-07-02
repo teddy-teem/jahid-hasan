@@ -1,14 +1,27 @@
 import React from 'react'
+import { Box } from '@mui/material'
+import CardForSkills from '../../../components/Elements/CardForSkills/CardForSkills'
 
 export default function Skills() {
   return (
-    <div className="education">
-      <p>Institute Name: Bangladesh Army University of Engineering & Technology</p>
-      <p>Certification Name:  SSC</p>
-      <p> Descipline / Major: </p>
-      <p>Result in CGPA: </p>
+    <div className="profession">
+      <Box
+      sx={{
+        margin: '10px',
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "wrap",
+        justifyContent: "space-around"
+      }}
+    >
+      <CardForSkills skillTitle={"Languages"} />
+      <CardForSkills skillTitle={"Database"} />
+      <CardForSkills skillTitle={"Lybrary / Framwork"} />
+      <CardForSkills skillTitle={"Services"} />
+      <CardForSkills skillTitle={"Interpersonal"} />
+      <CardForSkills skillTitle={"Others"} />
 
-      <p> Passing Time: 01/01/1999</p>
+    </Box>
     </div>
   )
 }

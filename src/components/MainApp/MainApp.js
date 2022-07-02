@@ -26,6 +26,7 @@ import Objectives from "../../modules/Objectives/Objective";
 import "./MainApp.css";
 import Journey from "../../modules/Journey/Journey";
 import Extra from "../../modules/Extra/Extra";
+import myTheme from "../../theme.json"
 
 const drawerWidth = 240;
 
@@ -93,7 +94,7 @@ export default function PersistentDrawerLeft() {
       <Drawer
         PaperProps={{
           style: {
-            backgroundColor: "rgb(35, 107, 83)",
+            backgroundColor: myTheme.LightColors.AppBar,
             color: "white",
             position: "fixed"
           }

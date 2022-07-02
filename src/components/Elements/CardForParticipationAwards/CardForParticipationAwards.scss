@@ -1,0 +1,19 @@
+.Award {
+  .read-or-hide{
+    color: rgb(148, 6, 6);
+    cursor: pointer;
+  }
+
+  .cardHover {
+    &:hover {
+      margin: 0;
+      cursor: pointer;
+      // background:linear-gradient(to right, #FFB6C1, #82E0AA);
+      // color: 	#C71585;
+      h5 {
+        font-weight: bolder;
+      }
+
+    }
+  }
+}
