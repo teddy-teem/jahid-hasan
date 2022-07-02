@@ -1,5 +1,5 @@
 .read-or-hide {
-  color: #940606;
+  color: #880808;
   cursor: pointer;
 }
 
@@ -14,4 +14,4 @@
 .cardHover:hover h5 {
   font-weight: bolder;
 }
-/*# sourceMappingURL=CardForProjects.css.map */
+/*# sourceMappingURL=Card.css.map */

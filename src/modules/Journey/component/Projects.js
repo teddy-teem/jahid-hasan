@@ -1,17 +1,18 @@
 import React from "react";
-import CardForProjects from "../../../components/Elements/CardForProjects/CardForProjects";
+import CommonCard from "../../../components/Elements/Cards/CommonCard";
 
 export default function Projects() {
   return (
     <div className="profession">
-      <CardForProjects
-        time={"July, 2021 - Runing"}
-        ProjectTitle={"Old Portfolio"}
-        methodology={"Waterfall"}
+       <CommonCard
+        supHeader={"June 2021 - July 2021"}
+        header={"Old Portfolio"}
+        subHeader={"Used Methodoligy is Waterfall"}
         paragraph={
           " I have learned Full stack Web Development from this course, I have learned HTML5, CSS3, SCSS, JavaScript, jquery, NodeJs, KoaJs, MongoDb, and so many Technology from this course. they have taken an exam after completing the course, and i have successfully passed the exam."
         }
-        usedTechnology={"HTML5, CSS3, Javascript, Jquery, Scss"}
+        subParagraph={"Used Technologies: HTML5, CSS3, Javascript, Jquery, Scss"}
+        websiteLink={"google.com"}
       />
     </div>
   );
